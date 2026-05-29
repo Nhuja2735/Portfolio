@@ -70,29 +70,31 @@
           </div>
         </div>
         <div class="hero-visual reveal reveal-delay">
-          <div class="avatar-ring has-photo">
-            <div class="avatar has-photo">
-              <img src="images/555_8491.JPG" alt="Nhuja Maharjan" class="avatar-img" width="272" height="272">
+          <div class="hero-avatar-wrap">
+            <div class="avatar-ring has-photo">
+              <div class="avatar has-photo">
+                <img src="images/555_8491.JPG" alt="Nhuja Maharjan" class="avatar-img" width="272" height="272">
+              </div>
             </div>
-          </div>
-          <div class="floating-card card-1">
-            <span>Paleswan, Nepal</span>
-          </div>
-          <div class="floating-card card-2">
-            <i class="fas fa-fist-raised"></i>
-            <span>Karate</span>
-          </div>
-          <div class="floating-card card-3">
-            <i class="fas fa-user-tie"></i>
-            <span>Host</span>
-          </div>
-          <div class="floating-card card-2">
-            <i class="fas fa-fist-raised"></i>
-            <span>Child Club</span>
-          </div>
-          <div class="floating-card card-2">
-            <i class="fas fa-fist-raised"></i>
-            <span>Networking</span>
+            <div class="floating-card card-1">
+              <span>Paleswan, Nepal</span>
+            </div>
+            <div class="floating-card card-2">
+              <i class="fas fa-fist-raised"></i>
+              <span>Karate</span>
+            </div>
+            <div class="floating-card card-3">
+              <i class="fas fa-user-tie"></i>
+              <span>Host</span>
+            </div>
+            <div class="floating-card card-4">
+              <i class="fas fa-child"></i>
+              <span>Child Club</span>
+            </div>
+            <div class="floating-card card-5">
+              <i class="fas fa-network-wired"></i>
+              <span>Networking</span>
+            </div>
           </div>
         </div>
       </div>
@@ -111,7 +113,7 @@
         <div class="about-grid">
           <div class="about-text reveal">
             <p>
-              Highly skilled in sports with a passion for bringing Nepal to the top of the world and making the country known across the globe. I serve as <strong>Host</strong> and <strong>Member at Paleswan, Nepal</strong> — a club and organization I work with — contributing to my community and the growth of sports in the region.
+              Highly skilled in sports with a passion for bringing Nepal to the top of the world and making the country known across the globe. I serve as <strong>Host</strong> and <strong>Member at Paleswan, Nepal</strong> — a club and organization I work with Paleswan Nepal contributing to my community and the growth of sports Children and Networking in the region.
             </p>
             <p>
               Experienced in working with national coaches and referees of Nepal. Dedicated to continuous learning and staying up-to-date with the latest techniques prioritized worldwide.
@@ -231,9 +233,23 @@
               <a href="https://www.linkedin.com/in/nhuja-maharjan-b84320339/" target="_blank" rel="noopener noreferrer" class="contact-link">
                 <i class="fab fa-linkedin-in"></i> LinkedIn
               </a>
+              <a href="mailto:kaicha2735@gmail.com" class="contact-link">
+                <i class="fas fa-envelope"></i> kaicha2735@gmail.com
+              </a>
             </div>
           </div>
-          <form class="contact-form reveal reveal-delay" id="contactForm">
+          <form
+            class="contact-form reveal reveal-delay"
+            id="contactForm"
+            action="https://formsubmit.co/kaicha2735@gmail.com"
+            method="POST"
+            novalidate
+          >
+            <input type="hidden" name="_subject" value="New message from portfolio">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="form-group">
               <input type="text" id="name" name="name" placeholder=" " required>
               <label for="name">Your Name</label>
@@ -266,6 +282,8 @@
     </div>
   </footer>
 
+  <script src="js/config.js"></script>
+  <script src="js/mailer.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
