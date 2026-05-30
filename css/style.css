@@ -506,55 +506,6 @@ button {
   font-size: 0.95rem;
 }
 
-.floating-card-logo {
-  padding: 0.45rem 0.65rem;
-}
-
-.floating-card-logo .paleswan-logo-sm {
-  width: auto;
-  height: 34px;
-  display: block;
-}
-
-/* Paleswan brand logo */
-.paleswan-logo {
-  object-fit: contain;
-  display: block;
-}
-
-.paleswan-logo-stat {
-  height: 40px;
-  width: auto;
-  margin: 0 auto 0.5rem;
-}
-
-.paleswan-logo-card {
-  height: 52px;
-  width: auto;
-  margin-bottom: 0.75rem;
-}
-
-.paleswan-logo-passion {
-  height: 48px;
-  width: auto;
-  margin-bottom: 1.25rem;
-}
-
-.stat-card-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.stat-card-logo .stat-label {
-  margin-top: 0.15rem;
-}
-
-.info-card-brand {
-  text-align: left;
-}
-
 .card-1 { top: 4%; right: -4%; animation-delay: 0s; }
 .card-2 { top: 38%; left: -14%; animation-delay: -1s; }
 .card-3 { top: 6%; left: -10%; animation-delay: -2s; }
@@ -736,6 +687,12 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+.services-grid-wide {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .service-card {
@@ -1085,10 +1042,6 @@ button {
   .floating-card {
     font-size: 0.72rem;
     padding: 0.5rem 0.75rem;
-  }
-
-  .floating-card-logo .paleswan-logo-sm {
-    height: 28px;
   }
 
   .card-1 { top: 2%; right: -8%; }
@@ -1456,6 +1409,58 @@ button {
   margin-bottom: 1.25rem;
 }
 
+/* ─── Photography themes ─── */
+.photography {
+  background: var(--bg);
+}
+
+.photo-themes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.photo-theme {
+  padding: 2rem 1.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.photo-theme:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 229, 199, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.photo-theme-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 229, 199, 0.1);
+  border-radius: 50%;
+  font-size: 1.35rem;
+  color: var(--accent);
+}
+
+.photo-theme h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.photo-theme p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
 .section-header-spaced {
   margin-top: 4rem;
 }
@@ -1540,7 +1545,8 @@ button {
 
 @media (max-width: 1024px) {
   .passion-grid,
-  .projects-grid-wide {
+  .projects-grid-wide,
+  .photo-themes {
     grid-template-columns: 1fr;
   }
 
