@@ -114,6 +114,13 @@ button {
   margin-bottom: 4rem;
 }
 
+.section-desc {
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 0.75rem auto 0;
+  font-size: 1rem;
+}
+
 /* ─── Buttons ─── */
 .btn {
   display: inline-flex;
@@ -1303,12 +1310,64 @@ button {
   margin: 0 auto;
 }
 
+.projects-grid-wide {
+  max-width: 900px;
+  grid-template-columns: 1.2fr 1fr;
+}
+
 .project-card {
+  position: relative;
   padding: 2rem;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   transition: var(--transition);
+}
+
+.project-card-featured {
+  border-color: rgba(0, 229, 199, 0.25);
+  background:
+    radial-gradient(ellipse 80% 50% at 100% 0%, rgba(0, 229, 199, 0.08), transparent),
+    var(--bg-card);
+}
+
+.project-status {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--gradient);
+  border-radius: 100px;
+}
+
+.project-features {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+}
+
+.project-features li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin-bottom: 0.45rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.project-features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
 .project-card:hover {
@@ -1348,7 +1407,94 @@ button {
   margin-top: 4rem;
 }
 
+/* ─── Passions: Sports · IT · Culture ─── */
+.passions {
+  background: var(--bg-elevated);
+}
+
+.passion-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.passion-card {
+  padding: 2rem 1.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: var(--transition);
+  height: 100%;
+}
+
+.passion-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 229, 199, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.passion-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 229, 199, 0.1);
+  border-radius: 14px;
+  font-size: 1.3rem;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.passion-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.passion-card > p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.passion-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.passion-list li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.passion-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.75rem;
+}
+
 @media (max-width: 1024px) {
+  .passion-grid,
+  .projects-grid-wide {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid-wide {
+    max-width: 480px;
+  }
+
   .dual-grid {
     grid-template-columns: 1fr;
   }

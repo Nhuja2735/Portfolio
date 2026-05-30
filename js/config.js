@@ -4,12 +4,12 @@
  */
 window.PORTFOLIO = {
   name: 'Nhuja Maharjan',
-  tagline: 'BCSIT Student · Frontend Developer · Patan, Lalitpur',
-  email: 'saicha2735@gmail.com',
+  tagline: 'Sports · IT · Culture — BCSIT Student · Patan, Lalitpur',
+  email: 'Kaicha2735@gmail.com',
   phone: '+9779763485835',
   location: 'Patan, Lalitpur',
   profileImage: 'images/555_8491.JPG',
-  formEndpoint: 'https://formsubmit.co/ajax/saicha2735@gmail.com',
+  formEndpoint: 'https://formsubmit.co/ajax/Kaicha2735@gmail.com',
   social: {
     facebook: 'https://www.facebook.com/nhujah.maharjan.11',
     instagram: 'https://www.instagram.com/_kai_cha/',

@@ -124,7 +124,7 @@
   // Contact mailer
   if (contactForm && window.Mailer) {
     window.Mailer.init(contactForm, {
-      email: cfg.email || 'saicha2735@gmail.com',
+      email: cfg.email || 'Kaicha2735@gmail.com',
       formEndpoint: cfg.formEndpoint,
       statusEl: formStatus,
     });
