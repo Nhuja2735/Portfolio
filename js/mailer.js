@@ -1,9 +1,9 @@
 /**
  * Portfolio mailer — sends contact form messages to your inbox via FormSubmit.
- * First submission: check kaicha2735@gmail.com and click the activation link.
+ * First submission: check saicha2735@gmail.com and click the activation link.
  */
 window.Mailer = (function () {
-  const DEFAULT_EMAIL = 'kaicha2735@gmail.com';
+  const DEFAULT_EMAIL = 'saicha2735@gmail.com';
 
   function getEndpoint(email) {
     return `https://formsubmit.co/ajax/${email || DEFAULT_EMAIL}`;

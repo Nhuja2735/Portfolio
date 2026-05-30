@@ -121,10 +121,10 @@
     });
   }
 
-  // Contact mailer → kaicha2735@gmail.com
+  // Contact mailer
   if (contactForm && window.Mailer) {
     window.Mailer.init(contactForm, {
-      email: cfg.email || 'kaicha2735@gmail.com',
+      email: cfg.email || 'saicha2735@gmail.com',
       formEndpoint: cfg.formEndpoint,
       statusEl: formStatus,
     });
